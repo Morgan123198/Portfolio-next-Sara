@@ -19,12 +19,12 @@ export function AboutSection() {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/skchoque",
+      href: "https://github.com/Morgan123198",
     },
     {
       name: "Resume",
       icon: FileText,
-      href: profile === "research" ? "/research-cv.pdf" : "/industry-cv.pdf",
+      href: profile === "research" ? "/CV_SaraChoque_Research.pdf" : "/CV_SaraChoque_Industry.pdf",
       download: true,
     },
     {
