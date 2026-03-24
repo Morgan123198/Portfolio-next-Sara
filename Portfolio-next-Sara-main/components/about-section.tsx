@@ -200,14 +200,14 @@ export function AboutSection() {
                 Presented at the International Astronautical Congress (IAC 2024), Italy
               </li>
               <li>
-                <strong>Travel Grant Award</strong>
+                <strong>Travel Grant Award of $3300</strong>
                 <br />
                 IEEE International Conference on Robotics and Automation (ICRA 2025)
                 <br />
                 Selected participant representing Peru
               </li>
               <li>
-                <strong>Travel Grant Award</strong>
+                <strong>Travel Grant Award of $2000</strong>
                 <br />
                 Summit of AI in Latin America (SALA 2026)
                 <br />

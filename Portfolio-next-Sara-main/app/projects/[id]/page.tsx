@@ -89,7 +89,7 @@ const projectsData: Record<
     tools: [
       "Python",
       "MATLAB",
-      "ROS (conceptual)",
+      "ROS2",
       "GIS-based Mission Planning",
       "Coverage Path Planning Algorithms",
       "UAV Dynamic Modeling (6-DOF)",
@@ -142,7 +142,7 @@ const projectsData: Record<
   },
   satellite: {
     title: "On-Board Computer Architecture for Chasqui II Nanosatellite",
-    heroImage: "/cubesat-small-satellite-development-project.jpg",
+    heroImage: "/satelite_chasqui.jpg",
     overview:
       "Contribution to the system engineering and architectural design of the On-Board Computer (OBC) subsystem for the Chasqui II nanosatellite. The project focused on defining robust hardware and software architectures, operational modes, and subsystem integration strategies for reliable CubeSat mission execution under space and safety-critical constraints.",
     problem:
@@ -159,7 +159,7 @@ const projectsData: Record<
       "Subsystem Interface Definition",
     ],
     results:
-      "A consistent and scalable OBC architectural design was achieved, incorporating clearly defined operational modes (boot, deployment, safe, nominal, transmitting) and well-structured subsystem interfaces. The work contributed to a peer-reviewed conference paper presented at the International Astronautical Congress (IAC 2024), documenting best practices and lessons learned from the Chasqui II nanosatellite development.",
+      "A consistent and scalable OBC architectural design was achieved, incorporating clearly defined operational modes (boot, deployment, safe, nominal, transmitting) and well-structured subsystem interfaces. The work contributed to a peer-reviewed conference paper presented at the International Astronautical Congress (IAC 2024), documenting best practices and lessons learned from the Chasqui II nanosatellite development. \n\nReference:\nJ. Tapia Gallardo, R. Mendieta, and S. Choque, 'Comprehensive Methodology and Best Practices for On-Board Computer System Engineering Design: Lessons Learned from Chasqui-II Nanosatellite Development in the APSCO CubeSat Program', in Proc. Int. Astronautical Congr. (IAC), 2024, pp. 1389–1398. doi: 10.52202/078365-0151.",
     gallery: [
       "/expo_cubesat.jpg",
       "/arquit.jpg",
@@ -202,19 +202,20 @@ const projectsData: Record<
       "Design and conceptual development of an IoT-enabled collaborative agricultural robot aimed at supporting small and medium-scale farmers through assisted seeding, irrigation, and crop monitoring. The system integrates a mobile robotic platform with a user-centered application and wireless communication, enabling intuitive remote operation, data acquisition, and task programming within a smart farming framework.",
     problem:
       "Agricultural production faces challenges such as labor shortages, inefficient resource usage, and limited access to automation technologies, particularly for small and medium farmers. There is a growing need for affordable, connected, and easy-to-use robotic systems that combine automation with real-time data to improve productivity and sustainability without replacing human labor.",
-    role: "Robotics & IoT Systems Team Member – Contributed to the definition of the system problem and solution approach. Designed and implemented the mobile application and human–robot interface for robot control, enabling task execution and monitoring via Bluetooth and IoT-based communication. Supported system-level design decisions related to usability, connectivity, and data-driven operation, and participated in the conceptual design of the overall robotic and IoT architecture.",
+    role: "Robotics & AI Systems Lead – Led the development of an autonomous agricultural rover designed to optimize planting, irrigation, and crop monitoring. I was responsible for the full-stack robotics integration using ROS, implementing autonomous navigation and mapping stacks. I designed the sensor fusion architecture and the high-level control logic to ensure reliable operation in unstructured agricultural environments.",
     tools: [
-      "Arduino",
-      "Bluetooth Communication",
+      "ROS / ROS 2",
+      "Autonomous Navigation (Nav2)",
       "IoT Architecture Design",
-      "Mobile Application Development",
+      "SLAM (Mapping)",
+      "LiDAR Integration",
       "Human–Robot Interface Design",
       "Embedded Systems",
       "Environmental & Soil Sensors",
       "Wireless Data Acquisition",
     ],
     results:
-      "The project resulted in a functional IoT-enabled robotic concept demonstrating the feasibility of low-cost smart farming solutions. The system enabled remote operation, sensor-based monitoring, and improved task efficiency. The solution was awarded 1st Place at the LUPIC Hackathon 2024, jointly organized by the National University of Engineering (UNI) and Seoul National University of Science and Technology, recognizing its innovation, technical feasibility, and impact on agricultural productivity in Peru and South Korea.",
+      "The project resulted in a fully functional autonomous robotic platform, demonstrating the feasibility of high-tech, low-cost smart farming. By integrating the ROS ecosystem, we achieved stable sensor fusion of LiDAR and environmental data, enabling real-time mapping through SLAM and precise path planning with Nav2. The system significantly improved task efficiency by allowing autonomous operation in unstructured agricultural terrains. This innovation was awarded 1st Place at the LUPIC Hackathon 2024, jointly organized by the National University of Engineering (UNI) and Seoul National University of Science and Technology, recognizing its technical feasibility and potential impact on agricultural productivity in both Peru and South Korea.",
     gallery: [
       "/hack-award.jpg",
       "/agricultural-robot-chassis.jpg",
@@ -295,7 +296,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         {/* Results */}
         <section>
           <h2 className="text-2xl font-semibold text-foreground mb-4">Results / Learnings</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">{project.results}</p>
+          {/* Añadimos whitespace-pre-line aquí */}
+          <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+    {project.results}
+  </p>
         </section>
 
         {/* Gallery */}

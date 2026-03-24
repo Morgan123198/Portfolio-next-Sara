@@ -68,7 +68,7 @@ const projects = [
       research: "Architectural design and operational mode definition for the Chasqui II CubeSat mission.",
       industry: "System engineering for safety-critical OBC firmware using FreeRTOS and NanoSat MO Framework.",
     },
-    image: "/cubesat-small-satellite-development-project.jpg",
+    image: "/molde_chasqui.png",
   },
   {
     id: "surgical-robot",
