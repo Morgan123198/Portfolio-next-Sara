@@ -98,6 +98,9 @@ export function ResumeSection() {
                   P&ID interpretation.
                 </li>
                 <li>
+                  <strong>Robot Ecosystems & Simulation:</strong> ROS/ROS 2, Gazebo (simulation), RViz2 (visualization), URDF creation, Navigation (Nav2), Mapping (SLAM).
+                </li>
+                <li>
                   <strong>Industrial Automation:</strong> PLC/HMI programming (IEC 61131-3), TIA Portal, structured
                   programming.
                 </li>
@@ -105,8 +108,7 @@ export function ResumeSection() {
                   <strong>Industrial Communication:</strong> Modbus TCP/IP, Profibus, MQTT (fundamentals).
                 </li>
                 <li>
-                  <strong>Control & Signal Processing:</strong> Classical and introductory modern control, DSP,
-                  filtering, system identification.
+                  <strong>Control & Signal Processing:</strong> Classical, modern and digital control, DSP, filtering, system identification. Implementation of autonomous control algorithms using ROS/ROS 2 and visualization in RViz2.
                 </li>
                 <li>
                   <strong>Data Acquisition & Experimental Analysis:</strong> Data traceability, experimental validation,
